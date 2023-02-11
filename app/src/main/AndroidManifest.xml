@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_vaccinationapp">
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EVaccinationApp">
+        <activity android:name=".Admin_Child_Details"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity android:name=".Admin_Add_FAQ"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Faq_Admin"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".VaccineDetails_Admin"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Faq_Parent"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".VaccineDetails"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Child_Vaccine_Info"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Parent_dashboard"
+            android:label="@string/title_activity_parent_dashboard"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".View_all_parent"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".View_all_vaccine"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Add_Vaccine"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Admin_dashboard"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Parent_reg"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Parent_login"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".Admin_login"
+            android:theme="@style/Theme.EVaccinationApp.NoActionBar" />
+        <activity
+            android:name=".HomePage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/vac_details"
+        android:title="Vaccine Details"
+        android:icon="@drawable/ic_baseline_info_24" />
+
+    <item android:id="@+id/faq"
+        android:title="FAQ"
+        android:icon="@drawable/ic_baseline_help_24"/>
+
+</menu>

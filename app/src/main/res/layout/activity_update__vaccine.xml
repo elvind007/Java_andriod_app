@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Vaccine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/update_vaccine_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+                android:text="Back"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_update_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:fontFamily="@font/bungee"
+                android:text="Update Vaccine Details"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/update_vaccine_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/update_vaccine_name_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxStrokeColor="@color/btnColor"
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/btnColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/update_vaccine_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vaccine Name"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/update_vaccine_description"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Description"
+                android:textSize="20sp"
+                android:layout_height="100dp"/>
+
+
+            <TextView
+                android:id="@+id/update_select_age_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Age Group:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/update_rg_age_grp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/update_rad_btn_0_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 - 3 Months"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/update_rad_btn_6_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="6 - 12 Months"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/update_rad_btn_12_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 - 18 Months"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/update_rad_btn_1.5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.5 - 2 years"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/update_rad_btn_2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 - 5 years"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/update_vacciine_btn"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10sp"
+                    android:backgroundTint="@color/btnColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="4dp"/>
+
+                <Button
+                    android:id="@+id/reset_vaccine_details_btn"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/btnColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="4dp"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

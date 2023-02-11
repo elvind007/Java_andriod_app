@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dose_quantity">
+        <item>Select Dose Quantity</item>
+        <item>0.1 ml</item>
+        <item>0.2 ml</item>
+        <item>0.5 ml</item>
+        <item>1 drop</item>
+        <item>2 drop</item>
+        <item>5 drop</item>
+    </string-array>
+</resources>

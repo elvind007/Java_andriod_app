@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="route_vaccine">
+        <item>Select Route of Vaccine</item>
+        <item>Oral</item>
+        <item>Intra-dermal</item>
+        <item>Intra-muscular</item>
+        <item>Subcutaneous(Applied under the Skin)</item>
+    </string-array>
+</resources>
